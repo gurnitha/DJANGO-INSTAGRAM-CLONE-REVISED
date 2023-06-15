@@ -59,3 +59,25 @@ REVISI Belajar membuat aplikasi INSTAGRAM berdasarkan tutorial Desphixs di Youtu
         new file:   Config/wsgi.py
         modified:   README.md
         new file:   manage.py
+
+
+#### 2.2 MEMBUAT APLIKASI - Membuat App Django 'App/Post'
+
+        :: Aktivitas
+
+        1. Membuat direktori
+        ~ mkdir App\Post
+
+        2. Membuat App Django
+        ~ django-admin startapp Post App\Post
+
+        :: File baru / modifikasi
+
+        new file:   App/Post/__init__.py
+        new file:   App/Post/admin.py
+        new file:   App/Post/apps.py
+        new file:   App/Post/migrations/__init__.py
+        new file:   App/Post/models.py
+        new file:   App/Post/tests.py
+        new file:   App/Post/views.py
+        modified:   README.md
