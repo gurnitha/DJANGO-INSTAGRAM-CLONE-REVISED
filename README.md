@@ -117,3 +117,26 @@ REVISI Belajar membuat aplikasi INSTAGRAM berdasarkan tutorial Desphixs di Youtu
 
 
 ## 3. HOMEPAGE
+
+
+#### 3.1 HOMEPAGE - Membuat 'Hello World!' dari HttpResponse
+
+        :: Aktivitas
+
+        1. Mengimport HttpResponse
+        from django.http import HttpResponse
+        2. Membuat index views dgn HttpResponse 'Hello World'
+        3. Membuat path untuk laman home
+        4. Register home path pada Config/urls.py
+
+        :: File baru / modifikasi
+
+        new file:   App/Post/urls.py
+        modified:   App/Post/views.py
+        modified:   Config/urls.py
+        modified:   README.md
+
+        NOTE:
+
+        Sukses display 'Hello World!'
+        :)
