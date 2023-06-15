@@ -157,3 +157,21 @@ REVISI Belajar membuat aplikasi INSTAGRAM berdasarkan tutorial Desphixs di Youtu
         modified:   App/Post/views.py
         modified:   Config/settings.py
         modified:   README.md
+        :)
+
+
+#### 3.3 HOMEPAGE - Menambahkan html template pada laman home
+
+        :: Aktivitas
+
+        1. Menambahkan html template pada laman home
+
+        :: File baru / modifikasi
+
+        modified:   App/Post/templates/Post/index.html
+        modified:   README.md
+
+        NOTE:
+
+        Home page belum berisi css, js dan images
+        sehingga laman home terlihat kurang menarik.
