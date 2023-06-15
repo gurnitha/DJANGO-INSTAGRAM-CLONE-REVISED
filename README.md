@@ -81,3 +81,17 @@ REVISI Belajar membuat aplikasi INSTAGRAM berdasarkan tutorial Desphixs di Youtu
         new file:   App/Post/tests.py
         new file:   App/Post/views.py
         modified:   README.md
+
+
+#### 2.3 MEMBUAT APLIKASI - Register app Post pada Config/settings.py
+
+        :: Aktivitas
+
+        1. Modifikasi name pada apps.py
+        2. Register app Post pada Config/settings.py
+
+        :: File baru / modifikasi
+
+        modified:   App/Post/apps.py
+        modified:   Config/settings.py
+        modified:   README.md
