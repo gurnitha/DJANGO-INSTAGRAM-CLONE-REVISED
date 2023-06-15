@@ -32,3 +32,7 @@ REVISI Belajar membuat aplikasi INSTAGRAM berdasarkan tutorial Desphixs di Youtu
         ~ pip install django==4.2.*
 
         modified:   README.md
+
+
+## 2. MEMBUAT APLIKASI
+
