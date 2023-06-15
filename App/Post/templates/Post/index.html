@@ -1,2 +1,22 @@
 <!-- App/Post/templates/Post/index.html -->
 {% extends 'base.html' %}
+{% load static %}
+
+
+{% block content %}
+
+<main class="main-container">
+    <section class="content-container">
+
+        <!-- Content -->
+        {% include './components/content.html' %}
+        <!-- Content end -->
+
+        <!-- Side menu -->
+        {% include './components/side-menu.html' %}
+        <!-- Side menu end -->
+        
+    </section>
+</main>
+
+{% endblock content %}

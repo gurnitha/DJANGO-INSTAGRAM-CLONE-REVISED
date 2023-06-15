@@ -224,3 +224,28 @@ REVISI Belajar membuat aplikasi INSTAGRAM berdasarkan tutorial Desphixs di Youtu
         NOTE:
 
         Sukses :)
+
+
+#### 3.6 HOMEPAGE - Template inheritance
+
+        :: Aktivitas
+
+        1. Memecah laman home template menjadi beberap bagian
+        2. Menggunakan include untuk menyertakan files yang dipecah
+        3. Testing: jalankan server dan refresh browser
+
+        :: File baru / modifikasi
+
+        new file:   App/Post/templates/Post/components/content-posts.html
+        new file:   App/Post/templates/Post/components/content-stories.html
+        new file:   App/Post/templates/Post/components/content.html
+        new file:   App/Post/templates/Post/components/side-menu.html
+        modified:   App/Post/templates/Post/index.html
+        modified:   App/Post/templates/base.html
+        new file:   App/Post/templates/header.html
+        new file:   App/Post/templates/navbar.html
+        modified:   README.md
+
+        NOTE:
+
+        Sukses :)

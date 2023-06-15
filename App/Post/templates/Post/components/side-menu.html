@@ -1,0 +1,34 @@
+<!-- App/Post/templates/Post/components/content.html -->
+
+{% load static %}
+
+<section class="side-menu">
+    <div class="side-menu__user-profile">
+        <a href="https://github.com/leocosta1" target="_blank" class="side-menu__user-avatar">
+        <img src="{% static 'assets2/images/ing.png' %}" alt="User Picture">
+        </a>
+        <div class="side-menu__user-info">
+            <a href="destiny">IngAfter65</a>
+            <span>@destiny</span>
+        </div>
+        <a class="side-menu__user-button">View Profile</a>
+    </div>
+    <div class="side-menu__suggestions-section">
+        <div class="side-menu__suggestions-header">
+            <h2>Suggestions for You</h2>
+            <button>See All</button>
+        </div>
+        <div class="side-menu__suggestions-content">
+            <div class="side-menu__suggestion">
+                <a href="/karen/" class="side-menu__suggestion-avatar">
+                <img src="{% static 'assets2/images/7.png' %}" alt="User Picture">
+                </a>
+                <div class="side-menu__suggestion-info">
+                    <a href="/karen/">Karen Bond</a>
+                    <span>@karen</span>
+                </div>
+                <a href="/karen/follow/0/" class="side-menu__suggestion-button">Follow</a>
+            </div>
+        </div>
+    </div>
+</section>
