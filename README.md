@@ -95,3 +95,22 @@ REVISI Belajar membuat aplikasi INSTAGRAM berdasarkan tutorial Desphixs di Youtu
         modified:   App/Post/apps.py
         modified:   Config/settings.py
         modified:   README.md
+
+
+#### 2.4 MEMBUAT APLIKASI - Menjalankan server lokal
+
+        :: Aktivitas
+
+        1. Tesing dengan menjalankan server lokal
+        ~ python manage.py runserver
+
+        2. Buka browser
+        http://127.0.0.1:8000/
+
+        :: File baru / modifikasi
+
+        modified:   README.md
+
+        NOTE:
+
+        Sukses menjalankan server dan display hasil.
