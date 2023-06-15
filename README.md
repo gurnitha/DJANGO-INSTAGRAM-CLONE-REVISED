@@ -36,3 +36,26 @@ REVISI Belajar membuat aplikasi INSTAGRAM berdasarkan tutorial Desphixs di Youtu
 
 ## 2. MEMBUAT APLIKASI
 
+
+#### 2.1 MEMBUAT APLIKASI - Membuat Proyek Django 'Config'
+
+        :: Aktivitas
+
+        1. Memastikan django sudah terinstal
+        ~ pip list
+
+        2. Membuat proyek django
+        ~ django-admin startproject Config .
+
+        3. Memeriksa hasil
+        ~ tree Config /f
+
+        :: File baru / modifikasi
+
+        new file:   Config/__init__.py
+        new file:   Config/asgi.py
+        new file:   Config/settings.py
+        new file:   Config/urls.py
+        new file:   Config/wsgi.py
+        modified:   README.md
+        new file:   manage.py
