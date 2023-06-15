@@ -202,3 +202,25 @@ REVISI Belajar membuat aplikasi INSTAGRAM berdasarkan tutorial Desphixs di Youtu
         NOTE:
 
         Sukses :)
+
+
+#### 3.5 HOMEPAGE - Membuat base template
+
+        :: Aktivitas
+
+        1. Membuat file baru dengan nama base.html
+        new file:   App/Post/templates/base.html
+        2. Memindahkan html template pada laman home ke base.html
+        3. Extends base.html pada laman home (index.html)
+        modified:   App/Post/templates/Post/index.html
+        4. Testing: jalankan server dan refresh browser
+
+        :: File baru / modifikasi
+
+        modified:   App/Post/templates/Post/index.html
+        new file:   App/Post/templates/base.html
+        modified:   README.md
+
+        NOTE:
+
+        Sukses :)
