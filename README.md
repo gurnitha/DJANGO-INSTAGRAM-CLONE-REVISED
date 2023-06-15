@@ -175,3 +175,30 @@ REVISI Belajar membuat aplikasi INSTAGRAM berdasarkan tutorial Desphixs di Youtu
 
         Home page belum berisi css, js dan images
         sehingga laman home terlihat kurang menarik.
+
+
+#### 3.4 HOMEPAGE - Menambahkan static files
+
+        :: Aktivitas
+
+        1. Membuat folder static
+        2. Mengisi assets pada static folder
+        3. Membuat path pada settings.py untuk statid files
+        4. Loading static files
+        5. Testing: jalankan server dan refresh browser
+
+        :: File baru / modifikasi
+
+        modified:   App/Post/templates/Post/index.html
+        modified:   Config/settings.py
+        modified:   README.md
+        new file:   static/ads-manage.JPG
+        new file:   static/assets1/default-user.png
+        ...
+        new file:   static/default.jpg
+        new file:   static/house.jpg
+        new file:   static/logo-ombak.PNG
+
+        NOTE:
+
+        Sukses :)

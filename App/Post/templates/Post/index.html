@@ -1,5 +1,5 @@
 <!-- App/Post/templates/Post/index.html -->
-
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,8 +9,8 @@
     <link rel="shortcut icon" href="assets1/favicon.svg" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="/static/assets1/style.css">
-    <script src="/static/assets1/script.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="{% static 'assets1/style.css' %}">
+    <script src="{% static 'assets1/script.js' %}" defer></script>
 </head>
 <body>
     <!-- Wrapper -->
@@ -106,7 +106,7 @@
                         </a>
                         <a href="/destiny/">
                             <div class="profile-button__picture">
-                                <img src="/static/assets2/images/ing.png" alt="User Picture">
+                                <img src="{% static 'assets2/images/ing.png' %}" alt="User Picture">
                             </div>
                         </a>
                     </button>
@@ -134,7 +134,7 @@
                                         </svg>
                                     </div>
                                     <div class="story__picture">
-                                        <img src="/static/assets2/images/ing.png" style="width: 80px; height: 80px; object-fit: cover;">
+                                        <img src="{% static 'assets2/images/ing.png' %}" style="width: 80px; height: 80px; object-fit: cover;">
                                     </div>
                                 </div>
                                 <span class="story__user">@destiny</span>
@@ -147,7 +147,7 @@
                                         </svg>
                                     </div>
                                     <div class="story__picture">
-                                        <img src="/static/assets2/images/6.jpg">
+                                        <img src="{% static 'assets2/images/6.jpg' %}">
                                     </div>
                                 </div>
                                 <span class="story__user">@destiny</span>
@@ -160,7 +160,7 @@
                                         </svg>
                                     </div>
                                     <div class="story__picture">
-                                        <img src="/static/assets2/images/1.jpg">
+                                        <img src="{% static 'assets2/images/1.jpg' %}">
                                     </div>
                                 </div>
                                 <span class="story__user">@james</span>
@@ -173,7 +173,7 @@
                                         </svg>
                                     </div>
                                     <div class="story__picture">
-                                        <img src="/static/assets2/images/2.jpg" style="width: 100px; height: 100px; object-fit: cover;">
+                                        <img src="{% static 'assets2/images/2.jpg' %}" style="width: 100px; height: 100px; object-fit: cover;">
                                     </div>
                                 </div>
                                 <span class="story__user">@samuel</span>
@@ -186,7 +186,7 @@
                                         </svg>
                                     </div>
                                     <div class="story__picture">
-                                        <img src="/static/assets2/images/5.jpg" style="width: 100px; height: 100px; object-fit: cover;">
+                                        <img src="{% static 'assets2/images/5.jpg' %}" style="width: 100px; height: 100px; object-fit: cover;">
                                     </div>
                                 </div>
                                 <span class="story__user">@princewill</span>
@@ -199,7 +199,7 @@
                                         </svg>
                                     </div>
                                     <div class="story__picture">
-                                        <img src="/static/assets2/images/7.png">
+                                        <img src="{% static 'assets2/images/7.png' %}">
                                     </div>
                                 </div>
                                 <span class="story__user">@robert</span>
@@ -212,7 +212,7 @@
                                         </svg>
                                     </div>
                                     <div class="story__picture">
-                                        <img src="/static/assets2/images/4.jpg">
+                                        <img src="{% static 'assets2/images/4.jpg' %}">
                                     </div>
                                 </div>
                                 <span class="story__user">@destiny</span>
@@ -230,7 +230,7 @@
                             <div class="post__header">
                                 <div class="post__profile">
                                     <a href="/media/profile_pciture/WhatsApp_Image_2021-10-18_at_11.10.52_PM.jpeg" class="post__avatar">
-                                    <img src="/static/assets2/images/7.png" alt="User Picture">
+                                    <img src="{% static 'assets2/images/7.png' %}" alt="User Picture">
                                     </a>
                                     <a href="princewillmpama" class="post__user">
                                     rais
@@ -249,7 +249,7 @@
                                     <a href="/32e19de4-c8df-4a00-b817-7b7b3effafdd">
                                     <img 
                                         class="post__media" 
-                                        src="/media/user_2/logo-ombak.PNG" 
+                                        src="{% static 'logo-ombak.PNG' %}" 
                                         alt="Post Content" 
                                         style="
                                         width: 700px; 
@@ -285,7 +285,7 @@
                                 <div class="post__infos">
                                     <div class="post__likes">
                                         <!-- <a href="#" class="post__likes-avatar">
-                                            <img src="/static/assets1/default-user.png" alt="User Picture">
+                                            <img src="{% static 'assets1/default-user.png' %}" alt="User Picture">
                                             </a> -->
                                         <!-- <span>Liked by <a class="post__name&#45;&#45;underline" href="#">user123</a> and <a href="#">73 others</a></span> -->
                                         <span>0 likes</span>
@@ -341,7 +341,7 @@
                             <div class="post__header">
                                 <div class="post__profile">
                                     <a href="/media/profile_pciture/WhatsApp_Image_2021-10-18_at_11.10.52_PM.jpeg" class="post__avatar">
-                                    <img src="/static/assets2/images/7.png" alt="User Picture">
+                                    <img src="{% static 'assets2/images/7.png' %}" alt="User Picture">
                                     </a>
                                     <a href="princewillmpama" class="post__user">
                                     rais
@@ -360,7 +360,7 @@
                                     <a href="/32e19de4-c8df-4a00-b817-7b7b3effafdd">
                                     <img 
                                         class="post__media" 
-                                        src="/media/user_2/ads-manage.JPG" 
+                                        src="{% static 'ads-manage.JPG' %}" 
                                         alt="Post Content" 
                                         style="
                                         width: 700px; 
@@ -396,7 +396,7 @@
                                 <div class="post__infos">
                                     <div class="post__likes">
                                         <!-- <a href="#" class="post__likes-avatar">
-                                            <img src="/static/assets1/default-user.png" alt="User Picture">
+                                            <img src="{% static 'assets1/default-user.png' %}" alt="User Picture">
                                             </a> -->
                                         <!-- <span>Liked by <a class="post__name&#45;&#45;underline" href="#">user123</a> and <a href="#">73 others</a></span> -->
                                         <span>10 likes</span>
@@ -446,7 +446,7 @@
                             </div>
                             <div class="side-menu__suggestion">
                                 <a href="/karen/" class="side-menu__suggestion-avatar">
-                                <img src="/static/assets2/images/7.png" alt="User Picture">
+                                <img src="{% static 'assets2/images/7.png' %}" alt="User Picture">
                                 </a>
                                 <div class="side-menu__suggestion-info">
                                     <a href="/karen/">Karen Bond</a>
@@ -460,7 +460,7 @@
                 <section class="side-menu">
                     <div class="side-menu__user-profile">
                         <a href="https://github.com/leocosta1" target="_blank" class="side-menu__user-avatar">
-                        <img src="/static/assets2/images/ing.png" alt="User Picture">
+                        <img src="{% static 'assets2/images/ing.png' %}" alt="User Picture">
                         </a>
                         <div class="side-menu__user-info">
                             <a href="destiny">IngAfter65</a>
@@ -476,7 +476,7 @@
                         <div class="side-menu__suggestions-content">
                             <div class="side-menu__suggestion">
                                 <a href="/karen/" class="side-menu__suggestion-avatar">
-                                <img src="/static/assets2/images/7.png" alt="User Picture">
+                                <img src="{% static 'assets2/images/7.png' %}" alt="User Picture">
                                 </a>
                                 <div class="side-menu__suggestion-info">
                                     <a href="/karen/">Karen Bond</a>
@@ -522,7 +522,7 @@
             <a href="/destiny/" class="navbar__button profile-button">
                 <div class="profile-button__border"></div>
                 <div class="profile-button__picture">
-                    <img src="/media/profile_pciture/desphixs.jpg" alt="User Picture">
+                    <img src="/media/profile_pciture/desphixs.jpg' %}" alt="User Picture">
                 </div>
             </a>
         </nav>
