@@ -140,3 +140,20 @@ REVISI Belajar membuat aplikasi INSTAGRAM berdasarkan tutorial Desphixs di Youtu
 
         Sukses display 'Hello World!'
         :)
+
+
+#### 3.2 HOMEPAGE - Membuat laman Home menggunakan templates, views, dan urls
+
+        :: Aktivitas
+
+        1. Mengimport os pada Config/settings.py 
+        2. Mengaktifkan django templates pada Config/settings.py
+        3. Membuat laman home 
+        4. Memodifikasi index views
+
+        :: File baru / modifikasi
+        
+        new file:   App/Post/templates/Post/index.html
+        modified:   App/Post/views.py
+        modified:   Config/settings.py
+        modified:   README.md
