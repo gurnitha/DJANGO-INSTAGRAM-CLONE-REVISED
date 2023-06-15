@@ -6,7 +6,16 @@ REVISI Belajar membuat aplikasi INSTAGRAM berdasarkan tutorial Desphixs di Youtu
 
         :: Aktivitas
 
-        1. Modifikasi README.md dan .gitignore file
-        
-        modified:   .gitignore
+
+## 1.1 SETUP - Membuat local environment
+
+        :: Aktivitas
+
+        1. Membuat virtual environment (venv3942)
+
+        > python --version
+        > pip --version
+        > virtualenv --version
+        > python -m venv venv3942
+
         modified:   README.md
