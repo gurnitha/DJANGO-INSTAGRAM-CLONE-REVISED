@@ -252,3 +252,46 @@ REVISI Belajar membuat aplikasi INSTAGRAM berdasarkan tutorial Desphixs di Youtu
 
 
 ## 4. DATABASE
+
+
+#### 4.1 DATABASE - Membuat MySQL Database
+
+        :: Aktivitas
+
+        1. Mengaktifkan MySQL Server
+
+        ~ mysql -u root -p
+        Enter password: **** (root)
+        Welcome to the MySQL monitor.  Commands end with ; or \g.
+        ...
+        mysql>
+
+        2. Membuat database
+
+        mysql> CREATE DATABASE django_instagram_clone_revised;
+
+        3. Memeriksa hasil
+
+        mysql> SHOW DATABASES;
+        +-----------------------------------------------------+
+        | Database                                            |
+        +-----------------------------------------------------+
+        | information_schema                                  |
+        | beginning_sql_queries                               |
+        | brad_schiff_petfoodsreference                       |
+        | ci_blog_and_magazine43                              |
+        ...
+        | django_instagram_clone_revised                      | <<----
+        | django_job_portal                                   |
+        ...
+        | wp_ecommerce_porto621_58                            |
+        +-----------------------------------------------------+
+        134 rows in set (0.22 sec)
+
+        :: File baru / modifikasi
+        
+        modified:   README.md
+
+        NOTE:
+
+        Suskses membuat database :)
