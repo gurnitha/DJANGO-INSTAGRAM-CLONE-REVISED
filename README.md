@@ -500,3 +500,20 @@ REVISI Belajar membuat aplikasi INSTAGRAM berdasarkan tutorial Desphixs di Youtu
         NOTE:
 
         Sukses membuat superuser :)
+
+
+#### 4.7 DATABASE - Admin login
+
+        :: Aktivitas
+
+        1. Menjalankan server
+        2. Login
+        http://127.0.0.1:8000/admin/
+
+        :: File baru / modifikasi
+        
+        modified:   README.md
+
+        NOTE:
+
+        Sukses login :)
