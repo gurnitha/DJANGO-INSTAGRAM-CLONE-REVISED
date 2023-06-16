@@ -449,8 +449,21 @@ REVISI Belajar membuat aplikasi INSTAGRAM berdasarkan tutorial Desphixs di Youtu
         6. Membuat .env.example file
 
         :: File baru / modifikasi
-        
+
         new file:   .env.example
         modified:   .gitignore
         modified:   Config/settings.py
+        modified:   README.md
+
+
+#### 4.5 DATABASE - Mengaktifkan Django Admin
+
+        :: Aktivitas
+
+        1. Membuat dan menjalankan migrasi
+        ~ python manage.py makemigrations
+        ~ python manage.py migrate
+
+        :: File baru / modifikasi
+        
         modified:   README.md
