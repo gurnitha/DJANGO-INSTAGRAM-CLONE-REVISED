@@ -389,7 +389,7 @@ REVISI Belajar membuat aplikasi INSTAGRAM berdasarkan tutorial Desphixs di Youtu
 
         modified:   Config/settings.py
         modified:   README.md
-        
+
         NOTE:
 
         Suskses:
@@ -398,3 +398,59 @@ REVISI Belajar membuat aplikasi INSTAGRAM berdasarkan tutorial Desphixs di Youtu
         2. Meng-upgrade MySQL.
         3. Membuat db baru.
         4. Menghubungkan db dengan proyek.
+
+
+#### 4.4 DATABASE - Melindungi database
+
+        :: Aktivitas
+
+        1. Menginstal django-environ
+        ~ pip install django-environ
+
+        2. Membuat .env file
+
+        3. Menuliskan environment variables pada .env file
+        4. Import environ pada settings.py
+        >  import environ
+
+        4.1 Initialise environ
+        # Initialise environment variables
+        env = environ.Env(
+            # set casting, default value
+            # DEBUG=(bool, False)
+            DEBUG=(bool, True)
+        )
+
+        4.2 Replace all references to your environment variables in settings.py
+        # Take environment variables from .env file
+        environ.Env.read_env(os.path.join(BASE_DIR, '.env'))
+
+        4.3 Secret_key
+        SECRET_KEY = env('SECRET_KEY')
+
+        4.4 Database
+        DATABASES = {
+            'default': {
+                'ENGINE': 'django.db.backends.mysql',
+                'NAME': env('DATABASE_NAME'),
+                'USER': env('DATABASE_USER'),
+                'PASSWORD': env('DATABASE_PASS'),
+            }
+        }
+
+        4.5 Add your .env file to .gitignore
+        # My gitignore
+        _docs
+        venv3942
+        .env
+
+        5. Testing: jalankan server
+
+        6. Membuat .env.example file
+
+        :: File baru / modifikasi
+        
+        new file:   .env.example
+        modified:   .gitignore
+        modified:   Config/settings.py
+        modified:   README.md

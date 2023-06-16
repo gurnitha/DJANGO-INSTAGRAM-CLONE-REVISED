@@ -13,20 +13,32 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 import os 
 
+# Initialise environment variables
+import environ
+env = environ.Env(
+    # set casting, default value
+    # DEBUG=(bool, False)
+    DEBUG=(bool, True)
+)
+
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+# Take environment variables from .env file
+environ.Env.read_env(os.path.join(BASE_DIR, '.env'))
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-wadhb_kz9furj^g(*lxlk@88!he1rh*t57^z6(j*&$_wegyt3z'
+# SECRET_KEY = 'django-insecure-wadhb_kz9furj^g(*lxlk@88!he1rh*t57^z6(j*&$_wegyt3z'
+SECRET_KEY = env('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
+
 
 ALLOWED_HOSTS = []
 
@@ -88,19 +100,28 @@ WSGI_APPLICATION = 'Config.wsgi.application'
 # }
 
 
-# MYSQL DB
+# # MYSQL DB
+# DATABASES = {
+#     'default': {
+#     'ENGINE': 'django.db.backends.mysql',
+#     'NAME': 'django_instagram_clone_revised',
+#     'USER': 'root',
+#     'PASSWORD': 'root',
+#     'HOST':'localhost',
+#     'PORT':'3306',
+#     }
+# }
+
 DATABASES = {
     'default': {
-    'ENGINE': 'django.db.backends.mysql',
-    'NAME': 'django_instagram_clone_revised',
-    'USER': 'root',
-    'PASSWORD': 'root',
-    'HOST':'localhost',
-    'PORT':'3306',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': env('DATABASE_NAME'),
+        'USER': env('DATABASE_USER'),
+        'PASSWORD': env('DATABASE_PASS'),
+        'HOST':'localhost',
+        'PORT':'3306',
     }
 }
-
-
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
