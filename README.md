@@ -467,3 +467,36 @@ REVISI Belajar membuat aplikasi INSTAGRAM berdasarkan tutorial Desphixs di Youtu
         :: File baru / modifikasi
         
         modified:   README.md
+
+        NOTE:
+
+        Sukses mengaktifkan Django Admin :)
+
+
+#### 4.6 DATABASE - Membuat superuser
+
+        :: Aktivitas
+
+        1. Membuat superuser
+
+        (venv3942) hp@ING:DJANGO-IG-CLONE ~ python manage.py createsuperuser
+        Username (leave blank to use 'hp'): admin
+        Email address: admin@admin.com
+        Password:xxx
+        Password:xxx
+        The password is too similar to the username.
+        This password is too short. It must contain at least 8 characters.
+        This password is too common.
+        Bypass password validation and create user anyway? [y/N]: y
+        Superuser created successfully.
+
+        2. Jalankan server
+        ~ python manage.py runserver
+
+        :: File baru / modifikasi
+        
+        modified:   README.md
+
+        NOTE:
+
+        Sukses membuat superuser :)
