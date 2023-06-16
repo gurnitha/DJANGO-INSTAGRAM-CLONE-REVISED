@@ -289,9 +289,44 @@ REVISI Belajar membuat aplikasi INSTAGRAM berdasarkan tutorial Desphixs di Youtu
         134 rows in set (0.22 sec)
 
         :: File baru / modifikasi
-        
+
         modified:   README.md
 
         NOTE:
 
         Suskses membuat database :)
+
+
+#### 4.2 DATABASE - Menginstal mysqlclient
+
+        :: Aktivitas
+
+        1. Menginstal mysqlclient
+
+        ~ pip install mysqlclient
+        Collecting mysqlclient
+          Using cached mysqlclient-2.1.1-cp39-cp39-win_amd64.whl (178 kB)
+        Installing collected packages: mysqlclient
+        Successfully installed mysqlclient-2.1.1
+        
+        2. Memeriksa hasilnya
+
+        ~ pip list
+        Package           Version
+        ----------------- -------
+        asgiref           3.7.2
+        Django            4.2.2
+        mysqlclient       2.1.1 << ---
+        pip               23.1.2
+        setuptools        56.0.0
+        sqlparse          0.4.4
+        typing_extensions 4.6.3
+        tzdata            2023.3
+
+        :: File baru / modifikasi
+
+        modified:   README.md
+
+        NOTE:
+
+        Suskses menginstal mysqlclient :)
