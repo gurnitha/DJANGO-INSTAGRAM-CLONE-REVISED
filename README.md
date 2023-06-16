@@ -330,3 +330,71 @@ REVISI Belajar membuat aplikasi INSTAGRAM berdasarkan tutorial Desphixs di Youtu
         NOTE:
 
         Suskses menginstal mysqlclient :)
+
+
+#### 4.3 DATABASE - Menghubungkan database dengan proyek
+
+        :: Aktivitas
+
+        1. Menghubungkan database dengan proyek
+
+        # MYSQL DB
+        DATABASES = {
+            'default': {
+            'ENGINE': 'django.db.backends.mysql',
+            'NAME': 'django_instagram_clone_revised',
+            'USER': 'root',
+            'PASSWORD': 'root',
+            'HOST':'localhost',
+            'PORT':'3306',
+            }
+        }
+
+        2. Testing: jalankan server
+
+        ~ python manage.py runserver
+
+        NotSupportedError(
+        django.db.utils.NotSupportedError: MySQL 8 or later is required (found 5.7.24).
+
+        3. Meng-upgrade MySQL dari versi 5.7 ke versi 8
+
+        3.1 Install MySQL versi 8 di Laragon
+
+        3.2 Backup database yg ada di MySQL versi 5.7
+
+        C:\Users\hp>mysqldump -u root -p --all-databases > E:\workspace\laragon\tmp\alldb.sql
+        Enter password: ****
+
+        NOTE: berhasil
+
+        3.3 Aktifkan MySQL versi 8
+
+        Start server > pilih MySQL versi 8
+
+        3.4 Membuat db pada MySQL versi 8
+        dbname: django_instagram_clone_revised
+
+        3.5 Testing: jalankan server
+
+        (venv3942) hp@ING:DJANGO-IG-CLONE ~ python manage.py runserver
+        Watching for file changes with StatReloader
+        Performing system checks...
+
+        ...
+        Starting development server at http://127.0.0.1:8000/
+        Quit the server with CTRL-BREAK.
+
+        :: File baru / modifikasi
+
+        modified:   Config/settings.py
+        modified:   README.md
+        
+        NOTE:
+
+        Suskses:
+
+        1. Membackup db.
+        2. Meng-upgrade MySQL.
+        3. Membuat db baru.
+        4. Menghubungkan db dengan proyek.
